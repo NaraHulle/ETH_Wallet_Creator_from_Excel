@@ -1,7 +1,7 @@
 import pandas as pd
 from ethereum import utils
 
-# Load private keys from Excel file
+# Load private keys from Excel file:
 excel_file = 'private_keys.xlsx'
 df = pd.read_excel(excel_file, sheet_name='Sheet1')  # Adjust sheet name if necessary
 private_keys = df['Private Key'].tolist()  # Assuming the column header is "Private Key"
